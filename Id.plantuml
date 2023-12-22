@@ -1,0 +1,38 @@
+@startuml
+
+
+
+
+
+/' Objects '/
+
+class Id {
+	+Id()
+	+Id(long long)
+	+Id(std::string)
+	+~Id()
+	+operator==(Id &, Id &) : bool
+	-id : std::string
+	+serialize() : std::string
+}
+
+
+
+
+
+/' Inheritance relationships '/
+
+
+
+
+/' Aggregation relationships '/
+
+
+
+
+
+/' Nested objects '/
+
+
+
+@enduml

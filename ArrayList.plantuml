@@ -1,0 +1,40 @@
+@startuml
+
+
+
+
+
+/' Objects '/
+
+class ArrayList <template<typename T>> {
+	+ArrayList()
+	+~ArrayList()
+	+get(int index) : T {query}
+	-array : T*
+	-capacity : int
+	-currentSize : int
+	+size() : int {query}
+	+add(const T& element) : void
+	-resize() : void
+}
+
+
+
+
+
+/' Inheritance relationships '/
+
+
+
+
+/' Aggregation relationships '/
+
+
+
+
+
+/' Nested objects '/
+
+
+
+@enduml

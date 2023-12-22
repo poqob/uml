@@ -1,0 +1,43 @@
+@startuml
+
+
+
+
+
+/' Objects '/
+
+class Game {
+	+Game()
+	+~Game()
+	-fileOperations : FileOperations*
+	+getFileOperations() : FileOperations*
+	+getGlobal() : GlobalArea*
+	-globalArea : GlobalArea*
+	-playerController : PlayerController*
+	-teamController : TeamController*
+	+match(Team*, Team*) : string
+	+randomMatch() : string
+	+gameSetup() : void
+	-setRandomEvent(Side &, Side &) : void
+}
+
+
+
+
+
+/' Inheritance relationships '/
+
+
+
+
+/' Aggregation relationships '/
+
+
+
+
+
+/' Nested objects '/
+
+
+
+@enduml

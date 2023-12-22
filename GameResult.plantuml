@@ -1,0 +1,34 @@
+@startuml
+
+
+
+
+
+/' Objects '/
+
+class GameResult {
+	+GameResult()
+	+~GameResult()
+	+{static} result(string, string) : string
+}
+
+
+
+
+
+/' Inheritance relationships '/
+
+
+
+
+/' Aggregation relationships '/
+
+
+
+
+
+/' Nested objects '/
+
+
+
+@enduml

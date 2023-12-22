@@ -1,0 +1,42 @@
+@startuml
+
+
+
+
+
+/' Objects '/
+
+class GlobalArea {
+	+GlobalArea()
+	+~GlobalArea()
+	+players : PlayerList*
+	+teams : TeamList*
+	+base : string
+	+metaPlayerPath : string
+	+metaTeamPath : string
+	+playersPath : string
+	+season : string
+	+seasonPath : string
+	+teamsPath : string
+}
+
+
+
+
+
+/' Inheritance relationships '/
+
+
+
+
+/' Aggregation relationships '/
+
+
+
+
+
+/' Nested objects '/
+
+
+
+@enduml

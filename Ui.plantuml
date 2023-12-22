@@ -1,0 +1,56 @@
+@startuml
+
+
+
+
+
+/' Objects '/
+
+class Ui {
+	+Ui(Game*, GlobalArea*)
+	+~Ui()
+	-fileOperations : FileOperations*
+	-game : Game*
+	-global : GlobalArea*
+	+addAFutballerToATeam() : void
+	+createFutballer() : void
+	+createTeam() : void
+	+deleteTeam() : void
+	+listFutballers() : void
+	-listFutballersOfATeam(string) : void
+	+listFutballersOfATeam() : void
+	+listTeams() : void
+	+match() : void
+	+playerMenu() : void
+	+randomMatch() : void
+	-removeAFutballerFromATeam(string, string) : void
+	+removeAFutballerFromATeam() : void
+	+removeFutballer() : void
+	+showSeason() : void
+	+teamMenu() : void
+	-updateAFutballerOfATeam(string, string) : void
+	+updateAFutballerOfATeam() : void
+	-updateFutballer(string id) : void
+	+updateFutballer() : void
+}
+
+
+
+
+
+/' Inheritance relationships '/
+
+
+
+
+/' Aggregation relationships '/
+
+
+
+
+
+/' Nested objects '/
+
+
+
+@enduml

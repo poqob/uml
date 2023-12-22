@@ -1,0 +1,44 @@
+@startuml
+
+
+
+
+
+/' Objects '/
+
+class TeamController {
+	+TeamController(GlobalArea*)
+	+~TeamController()
+	-fileOperations : FileOperations*
+	-globalArea : GlobalArea*
+	-playerController : PlayerController*
+	+addPlayerToTeam(Id, LicanceNo) : void
+	+createTeam(Team) : void
+	+listPlayersOfTeam(Id) : void
+	+listTeams() : void
+	+removePlayerFromTeam(Id, LicanceNo) : void
+	+removeTeamById(Id) : void
+	+updatePlayerOfATeam(Id, LicanceNo, Player) : void
+	+updateTeam(Id, Team) : void
+}
+
+
+
+
+
+/' Inheritance relationships '/
+
+
+
+
+/' Aggregation relationships '/
+
+
+
+
+
+/' Nested objects '/
+
+
+
+@enduml

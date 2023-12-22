@@ -1,0 +1,51 @@
+@startuml
+
+
+
+
+
+/' Objects '/
+
+class Side {
+	+Side(Team, GlobalArea*)
+	+~Side()
+	-globalArea : GlobalArea*
+	+parse(string, GlobalArea*) : Side
+	-state : SideState
+	-team : Team
+	+getScore() : int
+	-score : int
+	-secondPlayers : int
+	-totalPlayers : int
+	-change : string
+	-first : string
+	+getResultBlock() : string
+	-goalers : string
+	-second : string
+	+changePlayer() : void
+	+goal() : void
+	+serialize() : void
+	+setState(SideState) : void
+	-setupSide() : void
+}
+
+
+
+
+
+/' Inheritance relationships '/
+
+
+
+
+/' Aggregation relationships '/
+
+
+
+
+
+/' Nested objects '/
+
+
+
+@enduml

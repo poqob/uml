@@ -1,0 +1,36 @@
+@startuml
+
+
+
+
+
+/' Objects '/
+
+class Phone {
+	+Phone()
+	+Phone(long long)
+	+Phone(std::string)
+	+~Phone()
+	-validate(std::string) : bool
+}
+
+
+
+
+
+/' Inheritance relationships '/
+
+
+
+
+/' Aggregation relationships '/
+
+
+
+
+
+/' Nested objects '/
+
+
+
+@enduml

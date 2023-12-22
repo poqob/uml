@@ -1,0 +1,45 @@
+@startuml
+
+
+
+
+
+/' Objects '/
+
+class FileOperations {
+	+FileOperations(GlobalArea*)
+	+~FileOperations()
+	-globalArea : GlobalArea*
+	-fixMetas() : void
+	+readFiles() : void
+	-readPlayerData(string) : void
+	-readPlayerMeta() : void
+	-readTeamData(string) : void
+	-readTeamMeta() : void
+	-seasonRead() : void
+	-seasonWrite() : void
+	+writeFiles() : void
+	-writeIntoFiles() : void
+	-writeMetas() : void
+}
+
+
+
+
+
+/' Inheritance relationships '/
+
+
+
+
+/' Aggregation relationships '/
+
+
+
+
+
+/' Nested objects '/
+
+
+
+@enduml

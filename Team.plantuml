@@ -1,0 +1,45 @@
+@startuml
+
+
+
+
+
+/' Objects '/
+
+class Team {
+	+Team()
+	+Team(Team*)
+	+Team(Id, int, string, Adress, Phone, string, string)
+	+~Team()
+	+adress : Adress
+	+id : Id
+	+phone : Phone
+	+{static} parse(string) : Team*
+	+operator==(Team &, Team &) : bool
+	+score : int
+	+manager : string
+	+name : string
+	+players : string
+	+serialize() : string
+}
+
+
+
+
+
+/' Inheritance relationships '/
+
+
+
+
+/' Aggregation relationships '/
+
+
+
+
+
+/' Nested objects '/
+
+
+
+@enduml

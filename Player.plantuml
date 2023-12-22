@@ -1,0 +1,45 @@
+@startuml
+
+
+
+
+
+/' Objects '/
+
+class Player {
+	+Player()
+	+Player(TcNo, std::string, std::string, LicanceNo, Position, int, Birth)
+	+Player(Player*)
+	+~Player()
+	+birth : Birth
+	+licanceNumber : LicanceNo
+	+{static} parse(std::string) : Player*
+	+position : Position
+	+tc : TcNo
+	+operator==(Player &, Player &) : bool
+	+price : int
+	+name : std::string
+	+serialize() : std::string
+	+surname : std::string
+}
+
+
+
+
+
+/' Inheritance relationships '/
+
+
+
+
+/' Aggregation relationships '/
+
+
+
+
+
+/' Nested objects '/
+
+
+
+@enduml

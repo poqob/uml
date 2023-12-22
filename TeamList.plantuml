@@ -1,0 +1,53 @@
+@startuml
+
+
+
+
+
+/' Objects '/
+
+class TeamList {
+	+TeamList()
+	+TeamList(const TeamList& right)
+	+~TeamList()
+	+contains(Team* item) : Team*
+	+element_at(int i) : Team*
+	+findById(Id) : Team*
+	+get_first() : Team*
+	+get_last() : Team*
+	-items : Team**
+	+is_empty() : bool {query}
+	+operator==(TeamList& left, TeamList& right) : bool
+	-capacity : int
+	+get_size() : int {query}
+	+index_of(Team* item) : int
+	-length : int
+	+operator<<(ostream& screen, TeamList& right) : ostream&
+	+add(Team* item) : void
+	+clear() : void
+	+insert(int i, Team* item) : void
+	+remove(Team* item) : void
+	+remove_at(int i) : void
+	-reserve(int newCapacity) : void
+}
+
+
+
+
+
+/' Inheritance relationships '/
+
+
+
+
+/' Aggregation relationships '/
+
+
+
+
+
+/' Nested objects '/
+
+
+
+@enduml

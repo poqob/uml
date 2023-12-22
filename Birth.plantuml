@@ -1,0 +1,40 @@
+@startuml
+
+
+
+
+
+/' Objects '/
+
+class Birth {
+	+Birth(int, int, int)
+	+Birth()
+	+~Birth()
+	+{static} now() : Birth
+	+{static} parse(std::string) : Birth
+	+day : int
+	+month : int
+	+year : int
+	+serialize() : std::string
+}
+
+
+
+
+
+/' Inheritance relationships '/
+
+
+
+
+/' Aggregation relationships '/
+
+
+
+
+
+/' Nested objects '/
+
+
+
+@enduml

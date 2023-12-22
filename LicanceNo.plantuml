@@ -1,0 +1,36 @@
+@startuml
+
+
+
+
+
+/' Objects '/
+
+class LicanceNo {
+	+LicanceNo()
+	+LicanceNo(std::string)
+	+LicanceNo(int)
+	+~LicanceNo()
+	-validate(std::string) : bool
+}
+
+
+
+
+
+/' Inheritance relationships '/
+
+
+
+
+/' Aggregation relationships '/
+
+
+
+
+
+/' Nested objects '/
+
+
+
+@enduml

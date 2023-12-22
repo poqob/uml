@@ -1,0 +1,55 @@
+@startuml
+
+
+
+
+
+/' Objects '/
+
+class PlayerList {
+	+PlayerList()
+	+PlayerList(const PlayerList& right)
+	+~PlayerList()
+	+contains(Player* item) : Player*
+	+element_at(int i) : Player*
+	+findById(Id) : Player*
+	+findByLicanceNo(LicanceNo) : Player*
+	+get_first() : Player*
+	+get_last() : Player*
+	-items : Player**
+	+is_empty() : bool {query}
+	+operator==(PlayerList& left, PlayerList& right) : bool
+	-capacity : int
+	+get_size() : int {query}
+	+index_of(Player* item) : int
+	-length : int
+	+operator<<(std::ostream& screen, PlayerList& right) : std :: ostream&
+	+add(Player* item) : void
+	+clear() : void
+	+insert(int i, Player* item) : void
+	+remove(Player* item) : void
+	+remove_at(int i) : void
+	-reserve(int newCapacity) : void
+	+update(Player* item, Player* newItem) : void
+}
+
+
+
+
+
+/' Inheritance relationships '/
+
+
+
+
+/' Aggregation relationships '/
+
+
+
+
+
+/' Nested objects '/
+
+
+
+@enduml

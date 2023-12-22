@@ -1,0 +1,39 @@
+@startuml
+
+
+
+
+
+/' Objects '/
+
+class PlayerController {
+	+PlayerController(GlobalArea*)
+	+~PlayerController()
+	-fileOperations : FileOperations*
+	-globalArea : GlobalArea*
+	+createPlayer(Player) : void
+	+listPlayers() : void
+	+removePlayerById(Id) : void
+	+updatePlayer(Id, Player) : void
+}
+
+
+
+
+
+/' Inheritance relationships '/
+
+
+
+
+/' Aggregation relationships '/
+
+
+
+
+
+/' Nested objects '/
+
+
+
+@enduml

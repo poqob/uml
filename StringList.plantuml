@@ -1,0 +1,41 @@
+@startuml
+
+
+
+
+
+/' Objects '/
+
+class StringList {
+	+StringList()
+	+~StringList()
+	+contains(const std::string& element) : bool {query}
+	-capacity : int
+	-currentSize : int
+	+size() : int {query}
+	+get(int index) : string {query}
+	-array : string*
+	+add(const string& element) : void
+	-resize() : void
+}
+
+
+
+
+
+/' Inheritance relationships '/
+
+
+
+
+/' Aggregation relationships '/
+
+
+
+
+
+/' Nested objects '/
+
+
+
+@enduml

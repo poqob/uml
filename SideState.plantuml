@@ -1,0 +1,35 @@
+@startuml
+
+
+
+
+
+/' Objects '/
+
+enum SideState {
+	Draw
+	Loose
+	Win
+	dontKnow
+}
+
+
+
+
+
+/' Inheritance relationships '/
+
+
+
+
+/' Aggregation relationships '/
+
+
+
+
+
+/' Nested objects '/
+
+
+
+@enduml
